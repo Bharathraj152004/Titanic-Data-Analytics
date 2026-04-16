@@ -1,0 +1,255 @@
+/* ===================== */
+/* ROOT THEME */
+/* ===================== */
+
+:root {
+  --bg: #020617;
+  --panel: #0f172a;
+  --card: #1e293b;
+
+  --accent: #6366f1;
+
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --border: #334155;
+}
+
+/* ===================== */
+/* GLOBAL */
+/* ===================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Syne", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+main {
+  padding: 2rem;
+}
+
+/* ===================== */
+/* NAVBAR */
+/* ===================== */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 2rem;
+
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar h1 {
+  font-family: "Space Mono", monospace;
+  font-size: 1.3rem;
+}
+
+.navbar button {
+  margin-left: 8px;
+  padding: 8px 14px;
+
+  border-radius: 8px;
+  border: none;
+
+  cursor: pointer;
+
+  background: transparent;
+  color: var(--muted);
+}
+
+.navbar button:hover {
+  background: var(--card);
+  color: white;
+}
+
+/* ===================== */
+/* KPI GRID */
+/* ===================== */
+
+.grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 1rem;
+
+  margin-bottom: 2rem;
+}
+
+/* KPI CARD */
+
+.stat-card {
+  background: var(--card);
+
+  padding: 1rem;
+
+  border-radius: 14px;
+
+  border: 1px solid var(--border);
+}
+
+.stat-card h3 {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.stat-card p {
+  margin-top: 6px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+/* ===================== */
+/* CHART GRID */
+/* ===================== */
+
+.chart-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(350px, 1fr));
+
+  gap: 2rem;
+}
+
+/* ===================== */
+/* FORM */
+/* ===================== */
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+select,
+input {
+  margin-top: 6px;
+
+  padding: 8px 10px;
+
+  border-radius: 8px;
+
+  border: 1px solid var(--border);
+
+  background: var(--panel);
+
+  color: white;
+}
+
+/* ===================== */
+/* TABLE */
+/* ===================== */
+
+.search-input {
+  padding: 10px;
+
+  width: 300px;
+
+  margin-bottom: 12px;
+
+  border-radius: 8px;
+
+  border: none;
+
+  background: var(--card);
+
+  color: white;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  background: var(--panel);
+}
+
+th {
+  padding: 12px;
+
+  background: var(--card);
+
+  color: var(--muted);
+  text-align: left;
+}
+
+td {
+  padding: 10px;
+
+  border-top: 1px solid var(--border);
+}
+
+tbody tr:hover {
+  background: rgba(99,102,241,0.08);
+}
+
+/* ===================== */
+/* PAGINATION */
+/* ===================== */
+
+.pagination {
+  margin-top: 12px;
+
+  display: flex;
+
+  gap: 10px;
+
+  align-items: center;
+}
+
+button {
+  padding: 6px 12px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: var(--accent);
+
+  color: white;
+
+  cursor: pointer;
+}
+
+/* ===================== */
+/* RESPONSIVE */
+/* ===================== */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+}
