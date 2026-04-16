@@ -229,22 +229,6 @@ You can deploy this project using:
 
 ---
 
-# 📷 Screenshot (Add Later)
-
-After running your dashboard, take a screenshot and place it here:
-
-```
-/screenshots/dashboard.png
-```
-
-Then add:
-
-```markdown
-![Dashboard Screenshot](./screenshots/dashboard.png)
-```
-
----
-
 # 📜 License
 
 This project is licensed under the MIT License.
